@@ -1,0 +1,15 @@
+The compile-resources scripts are missing from the tarball
+
+--- origsrc/libepubgen-0.0.0/configure.ac	2014-06-22 13:39:06.000000000 -0500
++++ src/libepubgen-0.0.0/configure.ac	2015-10-25 14:52:51.597232300 -0500
+@@ -90,8 +90,8 @@ AC_MSG_CHECKING([for native Win32])
+ AS_CASE([$host],
+     [*-*-mingw*], [
+         native_win32=yes
+-        LIBEPUBGEN_WIN32_RESOURCE=libepubgen-win32res.lo
+-        EPUBGEN2HTML_WIN32_RESOURCE=epubgen2html-win32res.lo EPUBGEN2RAW_WIN32_RESOURCE=epubgen2raw-win32res.lo EPUBGEN2TEXT_WIN32_RESOURCE=epubgen2text-win32res.lo 
++        LIBEPUBGEN_WIN32_RESOURCE=
++        EPUBGEN2HTML_WIN32_RESOURCE= EPUBGEN2RAW_WIN32_RESOURCE= EPUBGEN2TEXT_WIN32_RESOURCE= 
+     ], [
+         native_win32=no
+         LIBEPUBGEN_WIN32_RESOURCE=
