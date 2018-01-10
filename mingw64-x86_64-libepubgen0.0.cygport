@@ -2,7 +2,7 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross
 
 NAME="mingw64-x86_64-libepubgen0.0"
-VERSION=0.0.0
+VERSION=0.0.1
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="EPUB document library for Win64 toolchain"
@@ -13,5 +13,3 @@ SRC_DIR="libepubgen-${VERSION}"
 PATCH_URI="0.0.0-win32-compile-resources.patch"
 
 CYGCONF_ARGS="--disable-werror --without-docs"
-
-KEEP_LA_FILES="none"
